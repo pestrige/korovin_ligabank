@@ -1,0 +1,29 @@
+.wrapper {
+  position: relative;
+  min-height: 477px;
+  padding: 43px 70px;
+  margin-bottom: 110px;
+  background-color: #F6F7FF;
+  border-radius: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 290px;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    background-color: #C1C2CA;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    transform: translateX(-50%) rotate(90deg);
+  }
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-family: var(font-medium);
+  font-size: 28px;
+  line-height: 39px;
+  color: #1F1E25;
+}
