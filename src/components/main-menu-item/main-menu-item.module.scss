@@ -1,0 +1,23 @@
+.item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.footer:not(:last-child) {
+  margin-right: 0;
+  margin-bottom: 7px;
+}
+
+.link {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--dark-accent);
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--color-accent);
+  }
+}
+
+.active {
+  color: var(--color-accent);
+}

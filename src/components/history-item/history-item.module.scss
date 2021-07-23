@@ -1,0 +1,30 @@
+.item {
+  font-family: var(--font-regular);
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--dark-accent);
+
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+}
+
+.item span:first-child {
+  margin-right: 40px;
+}
+
+.item span:nth-child(2) {
+  position: relative;
+  padding-right: 66px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 13px;
+    width: 40px;
+    height: 18px;
+    background-image: url("./arrow.svg");
+    background-repeat: no-repeat;
+  }
+}

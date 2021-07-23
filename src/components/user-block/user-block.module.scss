@@ -1,0 +1,27 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  position: relative;
+  padding-left: 30px;
+  color: var(--dark-accent);
+  font-size: 16px;
+  line-height: 18px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--color-accent);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 22px;
+    margin-left: -30px;
+    background-image: url('./user-login.svg');
+  }
+}

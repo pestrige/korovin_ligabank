@@ -1,0 +1,41 @@
+.list {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.link {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.facebook {
+  width: 9px;
+  background-image: url("./facebook.svg");
+}
+
+.instagram {
+  background-image: url("./instagram.svg");
+}
+
+.twitter {
+  background-image: url("./twitter.svg");
+}
+
+.youtube {
+  background-image: url("./youtube.svg");
+}

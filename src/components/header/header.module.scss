@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  align-items: center;
+  min-height: 91px;
+  background-color: var(--color-background);
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
