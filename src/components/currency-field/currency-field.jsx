@@ -23,6 +23,7 @@ export default function CurrencyField({label, type, withArrows = false, onInputC
         <input
           value={value}
           type='text'
+          inputMode='numeric'
           className={styles.input}
           maxLength={MAX_INPUT_LENGTH}
           onChange={(evt) => onInputChange(evt, type)}
