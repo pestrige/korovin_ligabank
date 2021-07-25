@@ -2,11 +2,11 @@
   font-family: var(--font-regular);
   font-size: 18px;
   line-height: 23px;
-  color: var(--dark-accent);
+  color: var(--color-dark-accent);
 
-  &:not(:last-child) {
-    margin-bottom: 23px;
-  }
+  // &:not(:last-child):not(:nth-child(5)) {
+  //   margin-bottom: 23px;
+  // }
 }
 
 .item span:first-child {

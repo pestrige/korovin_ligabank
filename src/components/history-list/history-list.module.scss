@@ -1,9 +1,13 @@
 .list {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 26px;
   padding: 0;
-  column-count: 2;
-  column-gap: 250px;
   list-style: none;
-  min-height: 220px;
+  min-height: 228px;
+  
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 20%);
+  column-gap: 250px;
 }

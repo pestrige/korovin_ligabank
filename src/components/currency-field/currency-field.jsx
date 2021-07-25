@@ -1,16 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Currency } from '../../const';
 import classNames from 'classnames';
 import styles from './currency-field.module.scss';
 
+const MAX_INPUT_LENGTH = 10;
 const currencies = Object.values(Currency);
 
-export default function CurrencyField({label, activeOption, withArrows = false}) {
-  const [value, setValue] = useState(activeOption);
-  const handleChange = (evt) => {
-    setValue(evt.target.value);
-  };
+export default function CurrencyField({label, type, withArrows = false, onInputChange, onSelectChange, value, activeCurrency}) {
 
   return (
     <fieldset
@@ -24,17 +21,19 @@ export default function CurrencyField({label, activeOption, withArrows = false})
       <label className={styles.label}>
         {label}
         <input
-          defaultValue='0'
+          value={value}
           type='text'
           className={styles.input}
+          maxLength={MAX_INPUT_LENGTH}
+          onChange={(evt) => onInputChange(evt, type)}
         />
       </label>
       <label>
         <span className='visually-hidden'>Выбор валюты</span>
         <select
           name='currency'
-          value={value}
-          onChange={handleChange}
+          value={activeCurrency}
+          onChange={(evt) => onSelectChange(evt, type)}
           className={styles.select}
         >
           {currencies.map ((currency) => (
@@ -53,6 +52,13 @@ export default function CurrencyField({label, activeOption, withArrows = false})
 
 CurrencyField.propTypes = {
   label: PropTypes.string.isRequired,
-  activeOption: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
   withArrows: PropTypes.bool,
+  onInputChange: PropTypes.func.isRequired,
+  onSelectChange:  PropTypes.func.isRequired,
+  value: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string,
+  ]).isRequired,
+  activeCurrency: PropTypes.string.isRequired,
 };

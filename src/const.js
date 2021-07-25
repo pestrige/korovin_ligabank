@@ -14,7 +14,17 @@ export const Currency = {
   CNY: 'cny',
 };
 
+export const CurrencyFieldType = {
+  SELL: 'sell',
+  BUY: 'buy',
+};
+
 export const InputLabel = {
   SELL: 'У меня есть',
   BUY: 'Хочу приобрести',
+};
+
+export const DateFormat = {
+  HISTORY: 'history',
+  SERVER: 'server',
 };
