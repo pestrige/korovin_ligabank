@@ -7,13 +7,13 @@
 .link {
   position: relative;
   padding-left: 30px;
-  color: #1F1E25;
+  color: var(--color-dark-accent);
   font-size: 16px;
   line-height: 18px;
   transition: color 0.3s;
 
   &:hover {
-    color: #2C36F2;
+    color: var(--color-accent);
   }
 
   &::before {

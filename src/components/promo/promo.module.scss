@@ -65,7 +65,7 @@
   font-family: var(--font-bold);
   font-size: 54px;
   line-height: 63px;
-  color: #F6F7FF;
+  color: var(--color-background);
 }
 
 .subtitle {
@@ -85,10 +85,11 @@
   font-family: var(--font-medium);
   font-size: 18px;
   line-height: 21px;
-  color: #1F1E25;
-  background-color: #F6F7FF;
+  color: var(--color-dark-accent);
+  background-color: var(--color-background);
   border-radius: 4px;
   transition: opacity 0.3s;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.8;

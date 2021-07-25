@@ -1,15 +1,19 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import classNames from 'classnames';
 import HistoryItem from '../history-item/history-item';
+import { getHistory } from '../../store/selectors';
 import styles from './history-list.module.scss';
 
-const logs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 export default function HistoryList() {
+  const history = useSelector(getHistory);
 
   return (
-    <ul className={styles.list}>
-      {logs.map((log) => (
+    <ul className={classNames(styles.list)}>
+      {history.map((item) => (
         <HistoryItem
-          key={log}
+          data={item}
+          key={item.id}
         />
       ))}
     </ul>

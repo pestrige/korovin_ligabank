@@ -2,11 +2,7 @@
   font-family: var(--font-regular);
   font-size: 18px;
   line-height: 23px;
-  color: #1F1E25;
-
-  &:not(:last-child) {
-    margin-bottom: 23px;
-  }
+  color: var(--color-dark-accent);
 }
 
 .item span:first-child {

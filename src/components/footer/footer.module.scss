@@ -1,6 +1,6 @@
 .footer {
   min-height: 224px;
-  background-color: #F6F7FF;
+  background-color: var(--color-background);
 }
 
 .list {
@@ -21,7 +21,7 @@
   font-family: var(--font-medium);
   font-size: 16px;
   line-height: 22px;
-  color: #1F1E25;
+  color: var(--color-dark-accent);
 }
 
 .paragraph {

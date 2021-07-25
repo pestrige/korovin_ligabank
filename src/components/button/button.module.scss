@@ -1,10 +1,16 @@
 .button {
   font-family: var(--font-medium);
-  color: #F6F7FF;
+  color: var(--color-background);
   text-align: center;
-  background: #2C36F2;
+  background-color: var(--color-accent);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .big {

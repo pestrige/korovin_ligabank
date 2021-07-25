@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from './button.module.scss';
 
-export default function Button({children, isBig = false}) {
+export default function Button({children, isBig = false, type = 'button', onClick}) {
   return (
     <button
-      type='button'
+      type={type}
       className={classNames(
         styles.button,
         {
@@ -14,6 +14,7 @@ export default function Button({children, isBig = false}) {
           [styles.small]: !isBig,
         },
       )}
+      onClick={onClick}
     >
       {children}
     </button>
@@ -23,4 +24,6 @@ export default function Button({children, isBig = false}) {
 Button.propTypes = {
   children: PropTypes.string,
   isBig: PropTypes.bool,
+  type: PropTypes.string,
+  onClick: PropTypes.func,
 };

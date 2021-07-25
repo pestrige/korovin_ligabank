@@ -1,0 +1,24 @@
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  min-width: 250px;
+  margin-left: -125px;
+  padding: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: var(--color-error);
+  border-radius: 2px;
+  z-index: 2;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s forwards;
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}

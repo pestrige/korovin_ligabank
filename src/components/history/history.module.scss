@@ -3,7 +3,8 @@
   min-height: 477px;
   padding: 43px 70px;
   margin-bottom: 110px;
-  background-color: #F6F7FF;
+  background-color: var(--color-background);
+
   border-radius: 4px;
 
   &::before {
@@ -25,5 +26,5 @@
   font-family: var(font-medium);
   font-size: 28px;
   line-height: 39px;
-  color: #1F1E25;
+  color: var(--color-dark-accent);
 }
