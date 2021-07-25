@@ -10,6 +10,8 @@ import { InputLabel, CurrencyFieldType, Currency } from '../../const';
 
 const MAX_HISTORY = 10;
 
+const isEmpty = (value) => value === '0' || value === 0 || value === '';
+
 const formatValue = (value) => {
   // убираем ноль в начале строки, если значение целое
   if (value.charAt(0) === '0' && value.length > 1 && !value.includes('.')) {
@@ -127,7 +129,7 @@ export default function Form() {
       <Button
         isBig
         type='submit'
-        className={styles.button}
+        disabled={isEmpty(sellValue)}
       >
         Сохранить результат
       </Button>

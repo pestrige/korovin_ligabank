@@ -11,6 +11,11 @@
   &:hover {
     opacity: 0.8;
   }
+
+  &:disabled {
+    background-color: var(--color-dark-accent-fade);
+    opacity: 1;
+  }
 }
 
 .big {

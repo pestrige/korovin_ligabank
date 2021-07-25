@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from './button.module.scss';
 
-export default function Button({children, isBig = false, type = 'button', onClick}) {
+export default function Button({children, isBig = false, type = 'button', onClick, disabled = false}) {
+  // eslint-disable-next-line no-console
+  console.log(disabled);
   return (
     <button
       type={type}
@@ -15,6 +17,7 @@ export default function Button({children, isBig = false, type = 'button', onClic
         },
       )}
       onClick={onClick}
+      disabled={disabled}
     >
       {children}
     </button>
@@ -24,6 +27,7 @@ export default function Button({children, isBig = false, type = 'button', onClic
 Button.propTypes = {
   children: PropTypes.string,
   isBig: PropTypes.bool,
+  disabled: PropTypes.bool,
   type: PropTypes.string,
   onClick: PropTypes.func,
 };
