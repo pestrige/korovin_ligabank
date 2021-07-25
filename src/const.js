@@ -10,7 +10,7 @@ export const Currency = {
   RUB: 'rub',
   USD: 'usd',
   EUR: 'eur',
-  GBR: 'gbr',
+  GBP: 'gbp',
   CNY: 'cny',
 };
 

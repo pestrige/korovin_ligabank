@@ -4,8 +4,7 @@ import classNames from 'classnames';
 import styles from './button.module.scss';
 
 export default function Button({children, isBig = false, type = 'button', onClick, disabled = false}) {
-  // eslint-disable-next-line no-console
-  console.log(disabled);
+
   return (
     <button
       type={type}

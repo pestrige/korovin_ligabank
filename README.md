@@ -7,7 +7,7 @@
  - Очистка истории
 ---
 
-Опубликованная версия - http://liga-bank.dimkey.me
+Опубликованная версия - https://ligabank.herokuapp.com
 
 ---
 
