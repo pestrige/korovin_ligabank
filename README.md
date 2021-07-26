@@ -7,7 +7,7 @@
  - Очистка истории
 ---
 
-Опубликованная версия - https://ligabank.herokuapp.com
+Опубликованная версия - https://pestrige.github.io/korovin_ligabank/
 
 ---
 

@@ -5,7 +5,7 @@ import NotFoundPage from '../not-found-page/not-found-page';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path='/'>
           <MainPage />
