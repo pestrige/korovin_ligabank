@@ -38,7 +38,7 @@ export default function Calendar() {
           className={styles.calendar}
           options={{
             defaultDate: currentDate,
-            dateFormat: 'j-m-Y',
+            dateFormat: 'j.m.Y',
             maxDate: currentDate,
             minDate,
             onChange: handleChange,
