@@ -1,13 +1,12 @@
 .list {
-  margin: 0;
-  margin-bottom: 26px;
+  margin: 0 0 24px;
   padding: 0;
   list-style: none;
   min-height: 228px;
   
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(5, 20%);
-  column-gap: 250px;
+  grid-template-columns: 480px 480px;
+  grid-template-rows: repeat(5, 46px);
+  justify-content: space-between;
 }
