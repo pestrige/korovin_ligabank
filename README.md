@@ -17,3 +17,6 @@
  - SCSS
  - CSS Modules
  - Библиотеки classNames, Flatpickr
+---
+Превью:
+![Скриншот главной страницы](screenshot.png)
