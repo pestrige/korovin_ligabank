@@ -7,7 +7,7 @@
  - Очистка истории
 ---
 
-Опубликованная версия - https://ligabank.herokuapp.com
+Опубликованная версия - https://korovin-ligabank.vercel.app
 
 ---
 
@@ -18,5 +18,6 @@
  - CSS Modules
  - Библиотеки classNames, Flatpickr
 ---
-Превью:
+## Превью:
+
 ![Скриншот главной страницы](screenshot.png)
